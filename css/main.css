@@ -1,0 +1,37 @@
+ 
+ body {
+	background-color:#282b2d;
+	color:eee;
+ }
+ 
+ a , a:visited {
+	color:#01a9b4;
+	text-decoration:none;
+ }
+ 
+ a:hover {
+	color:#01cdda;
+ }
+ 
+ ul, ul li {
+	list-style-type: none;
+ }
+ 
+ h1, h2, h3, h4 {
+	color:#fe5a61;
+ }
+ 
+ .slides , .resources {
+	border:1px solid white;
+	display:inline-block;
+	float:left;
+	margin:1%;
+	padding: 1%;
+	width: 45%;
+	
+ }
+ 
+ 
+ 
+ 
+ 
