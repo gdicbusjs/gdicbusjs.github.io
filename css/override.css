@@ -1,0 +1,20 @@
+
+section#google iframe {
+	width: 100%!important;
+	min-height: 100%!important;
+}
+
+section#google iframe div {
+	color: white!important;
+
+}
+
+section#google iframe html body.ss-base-body {
+
+	background: transparent!important;
+	background-color: transparent!important;
+}	
+	
+	
+	
+	
