@@ -51,7 +51,7 @@ body {
 	max-width:140px;
 
 	background: url('../images/gdi_logo_badge_small2.png') no-repeat;
-	width: 100%;
+	width: 20%;
 	height: 100%;
 	background-size: contain;	
  }
@@ -141,7 +141,7 @@ body {
 		clear:both;
 		margin: 0.5em 0;
 		padding: 0 2%;
-		width: 96%;
+		width: 95%;
 	}
 	.slides {
 		min-height: 18em;
@@ -172,7 +172,11 @@ body {
 
 	 .slides , .resources {
 		border:none;
-	}	
+	}
+	
+	.logo {
+		display:none;
+	}
 	
 }
  
