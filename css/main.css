@@ -1,8 +1,33 @@
  
- body {
+html {
 	background-color:#282b2d;
-	color:eee;
+	color:#eee;
  }
+ 
+ 
+ 
+ div {
+	margin:0;
+	padding:0;
+ }
+ 
+ img {
+	width:100%;
+ }
+ 
+ .logo {
+	display:inline-block;
+	float:left;
+	max-width:140px;
+	width:20%;
+ }
+ 
+ .blurb{
+	display:inline-block;
+	float:left;
+	padding-left:5%;
+	width:70%; 
+ }	
  
  a , a:visited {
 	color:#01a9b4;
@@ -19,19 +44,94 @@
  
  h1, h2, h3, h4 {
 	color:#fe5a61;
+	margin: 0.2em 0;
+	padding: 0;
  }
+ 
+ h1 {
+	font-size:150%;
+ }
+ 
+ .slides {
+	clear:both;
+	margin-right:1%;
+ }
+ 
+
  
  .slides , .resources {
-	border:1px solid white;
+	border:5px ridge #fe5a61;
 	display:inline-block;
 	float:left;
-	margin:1%;
 	padding: 1%;
-	width: 45%;
-	
+	width: 46%;
+	min-height: 18em;
+ }
+
+
+ 
+ ul, li {
+	margin:0;
+	padding:0;
  }
  
+ .slides ul li {
+	float:left;
+	font-weight:bold;
+	width: 15%;
+ }
  
+ .slides ul li ul {
+	display: none;
+ }
+ 
+  .slides ul li ul li {
+/*
+	border:solid 1px white;
+*/
+	clear:both;
+	font-weight:300;
+	margin-top:0.2em;
+	min-width:7em;
+	width: 200%;
+ }
+ 
+ .slides ul li:hover ul {
+	display: block;
+ }
+ 
+ @media (max-width: 900px) { 
+	.slides , .resources {
+		border:3px ridge #fe5a61;
+		clear:both;
+		margin-left:4%;
+		margin-top:1em;
+		width:90%;
+	}
+	.slides {
+		min-height: 18em;
+	}
+	
+}
+  
+@media (max-width: 500px) { 
+	.slides ul li ul {
+		display:block;
+	}
+	
+	.slides ul li {
+		clear:both;
+	}
+	
+	.slides ul li ul {
+		margin-left:1em;
+	}
+
+	 .slides , .resources {
+		border:none;
+	}	
+	
+}
  
  
  
