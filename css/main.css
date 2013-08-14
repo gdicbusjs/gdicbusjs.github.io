@@ -149,9 +149,10 @@ body {
 	.slides ul li ul {
 		display:block;
 	}
-	
+
 	.slides ul li {
 		clear:both;
+		width: 100%;
 	}
 	
 	.slides ul li ul {
