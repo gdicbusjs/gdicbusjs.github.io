@@ -49,7 +49,11 @@ body {
 	display:inline-block;
 	float:left;
 	max-width:140px;
-	width:20%;
+
+	background: url('../images/gdi_logo_badge_small2.png') no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: contain;	
  }
  
  .blurb{
@@ -135,9 +139,9 @@ body {
 	.slides , .resources {
 		border:3px ridge #fe5a61;
 		clear:both;
-		margin:0;
-		padding: 0 1em;
-		width:100%;
+		margin: 0.5em 0;
+		padding: 0 2%;
+		width: 96%;
 	}
 	.slides {
 		min-height: 18em;
