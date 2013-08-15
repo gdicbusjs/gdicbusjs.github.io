@@ -29,7 +29,7 @@ body {
  	width:100%;
  }
  
- .content , .header {
+ .content , .header, .footer {
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;  
@@ -38,11 +38,16 @@ body {
  }
  
  .content {
- 	height:85%;
+ 	height:70%;
+	padding-bottom:1em;
  }
  
  .header {
- 	height:15%;
+ 	height:18%;
+ }
+ 
+ .footer {
+	height: 12%;
  }
  
  .logo {
@@ -90,14 +95,14 @@ body {
 	clear:both;
 	margin-right:1%;
  }
- 
 
  
  .slides , .resources {
-	border:5px ridge #fe5a61;
+	border:3px ridge #fe5a61;
 	display:inline-block;
 	float:left;
 	height:100%;
+	margin-top: 1em ;
 	min-height: 18em;
 	padding: 1%;
 	width: 46%;
@@ -113,7 +118,8 @@ body {
  .slides ul li {
 	float:left;
 	font-weight:bold;
-	width: 15%;
+	text-align: left;
+	width: 16.5%;
  }
  
  .slides ul li ul {
@@ -135,10 +141,16 @@ body {
 	display: block;
  }
  
- @media (max-width: 900px) { 
+ .resources ul li a {
+	font-size:110%;
+	font-weight:bold;
+ }
+ 
+ @media (max-width: 800px) { 
 	.slides , .resources {
 		border:3px ridge #fe5a61;
 		clear:both;
+		height:auto;
 		margin: 0.5em 0;
 		padding: 0 2%;
 		width: 95%;
@@ -176,6 +188,10 @@ body {
 	
 	.logo {
 		display:none;
+	}
+	
+	.header {
+		height: auto;
 	}
 	
 }
