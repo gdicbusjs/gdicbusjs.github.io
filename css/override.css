@@ -14,7 +14,15 @@ section#google iframe html body.ss-base-body {
 	background: transparent!important;
 	background-color: transparent!important;
 }	
-	
-	
+
+.eighty {
+    float:left;
+    width:79%;
+}
+
+.twenty {
+    float:right;
+    width:19%;
+}
 	
 	
