@@ -9,12 +9,16 @@ body {
 	height:100%;
 }
  
+p {
+    margin: 0.1em 0;
+}
+
+
  
- 
- div {
+div {
 	margin:0;
 	padding:0;
- }
+}
  
  img {
 	width:100%;
@@ -99,6 +103,9 @@ body {
  
  .slides , .resources {
 	border:3px ridge #fe5a61;
+    -moz-border-radius: 15px;
+    border-radius: 15px;    
+    
 	display:inline-block;
 	float:left;
 	height:100%;
@@ -142,8 +149,11 @@ body {
  }
  
  .resources ul li a {
-	font-size:110%;
 	font-weight:bold;
+ }
+ 
+  .resources ul li a+p {
+     margin:0.3em 0 ;
  }
  
  @media (max-width: 800px) { 
