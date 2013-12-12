@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>XMAS!</title>
+<style>
+    p {
+        margin: 1em;
+    }
+</style>
+</head>
+
+<body>
+<div id="song">
+</div>
+
+
+<script>
+    var outDiv = document.getElementById("song");  // $("#song");
+    var gifts = Array(
+        "",
+        "a Partridge in a Pear Tree."   , 
+        "2 Turtle Doves, <br>",
+        "3 French Hens, <br>",
+        "4 Colly Birds, <br>",
+        "5 Gold Rings, <br>",
+        "6 Geese-a-Laying, <br>",
+        "7 Swans-a-Swimming, <br>",
+        "8 Maids-a-Milking, <br>",
+        "9 Ladies Dancing, <br>",
+        "10 Lords-a-Leaping, <br>",
+        "11 Pipers Piping, <br>",
+        "12 Drummers Drumming, <br>"
+        );
+    var ordinals = Array("","first","second","third","fourth","fifth","sixth","seventh","eigth","ninth","tenth","eleventh","twelveth");
+        
+    function writeVerse(txt) {
+        outDiv.innerHTML += '<p>' + txt + '</p>';
+    }
+    
+    function VerseLine(n) {
+        var txt = gifts[n];
+        if (n > 1) {
+            if (n==2)  txt += "And ";
+            txt += VerseLine(n-1);
+        }
+        
+        return txt;
+    }
+    
+    for(var verse = 1; verse < 13; verse++) {
+        var thisVerseHTML = "On the " + ordinals[verse] + " day of Xmax, my true love gave to me:<br>" +  VerseLine(verse);
+        writeVerse(thisVerseHTML);
+    }
+</script>
+
+</body>
